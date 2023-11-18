@@ -1,0 +1,54 @@
+﻿<Window x:Class="WpfManagedColors.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" 
+        xmlns:Mscms="clr-namespace:Mscms"  WindowStartupLocation="CenterScreen" Title="WPF Color Managed" Height="752" Width="720" Loaded="Window_Loaded" LocationChanged="Window_LocationChanged">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Input Profile"/>
+            <TextBox x:Name="txtInputProfile" Grid.Column="2" Grid.ColumnSpan="2" IsReadOnly="True" />
+            <TextBlock Grid.Row="4" Text="Output Profile"/>
+            <TextBox x:Name="txtOutputProfile" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" IsReadOnly="True" />
+            <TextBlock Grid.Row="2" Text="Monitor"/>
+            <TextBox x:Name="txtMonitor" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" IsReadOnly="True" />
+            <TextBlock Grid.Row="6" Text="Rendering Intent"/>
+            <TextBox x:Name="txtRenderingIntent" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" IsReadOnly="True" />
+            <TextBlock Grid.Row="8" Text="Flags"/>
+            <TextBox x:Name="txtFlags" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" IsReadOnly="True" />
+        </Grid>
+
+        <TextBlock Text="Managed Color" HorizontalAlignment="Center" Grid.Row="1" />
+        <TextBlock Grid.Column="1" Text="Unmanaged Color" HorizontalAlignment="Center" Grid.Row="1" />
+        <Rectangle x:Name="rectManaged" Grid.Column="0" Grid.Row="2" />
+        <Rectangle x:Name="rectUnmanaged" Grid.Column="1" Grid.Row="2" />
+        <Image x:Name="imageManaged" Grid.Row="3" />
+        <Image x:Name="imageUnmanaged" Grid.Column="1" Grid.Row="3" />
+
+    </Grid>
+</Window>

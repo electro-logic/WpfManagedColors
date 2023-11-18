@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <ApplicationIcon>logo256.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="d8m.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logo256.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mscms.WPF" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="d8m.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
