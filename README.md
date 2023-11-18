@@ -1,0 +1,2 @@
+# WpfManagedColors
+WPF Managed Colors
