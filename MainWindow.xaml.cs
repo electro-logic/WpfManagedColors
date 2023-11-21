@@ -39,7 +39,7 @@ namespace WpfManagedColors
             // The API is similar to lcmsNET, but based on the Windows Color System (Win32 API)
             using (var inputProfile = Profile.FromSRGBColorSpace())
             using (var outputProfile = WpfProfileExtension.FromVisual())
-            using (var transform = Mscms.Transform.Create(inputProfile, outputProfile, RenderingIntent.INTENT_PERCEPTUAL, CmsFlags.BEST_MODE | CmsFlags.PRESERVEBLACK))
+            using (var transform = ColorTransform.Create(inputProfile, outputProfile, RenderingIntent.Perceptual, ColorTransformFlags.PreserveBlack))
             {
                 // Show used settings
                 txtMonitor.Text = _monitor.Device;

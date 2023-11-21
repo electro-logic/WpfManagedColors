@@ -41,6 +41,8 @@ Can be used by simply adding the IsColorManaged property to your XAML.
 
 A FullHD image (1920x1080) color correction usually takes less than 0.1s
 
+For high-performance scenario a commercial version of the Mscms.WPF library exists and offers a GPU-accelerated color management engine, making possible to color-manage the whole app with support for real-time animations, video playback, etc.. Please contact the author if interested.
+
 ## Demo Example - Calibrated Monitor
 
 The Monitor is calibrated and the Color Profile is installed. In this example you can see that the Managed Yellow is slightly different to be more accurate on the used display. Colors are transformed from the Input Profile (sRGB) to the Output Profile (Monitor profile .icm)
@@ -61,4 +63,4 @@ WPF projects (including .NET 6+) should reference Mscms.WPF, while non-WPF proje
 
 ## Commercial License
 
-The library [Mscms](https://www.nuget.org/packages/Mscms.WPF) is not free to use for commercial projects. Please contact the author to obtain a commercial license.
+The library [Mscms](https://www.nuget.org/packages/Mscms.WPF) is not free to use for commercial projects. Please contact the author to obtain a commercial license and additional features.
