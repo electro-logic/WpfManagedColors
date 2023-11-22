@@ -97,4 +97,4 @@ WPF projects (including .NET 6+) should reference Mscms.WPF, while non-WPF proje
 
 ## Commercial License
 
-The library [Mscms](https://www.nuget.org/packages/Mscms.WPF) is not free to use for commercial projects. Please contact the author to obtain a commercial license and additional features.
+The library [Mscms](https://www.nuget.org/packages/Mscms.WPF) is not free to use for commercial projects. Please contact (info at majinsoft .com) to obtain a commercial license, support and additional features such as GPU acceleration.
