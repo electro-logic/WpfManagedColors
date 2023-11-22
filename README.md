@@ -49,13 +49,15 @@ To verify the accuracy of the Mscms Color Management a Target Color was displaye
 
 Calibration
 
-| Monitor  | LG 27UK650 |
-| Calibration  | X-Rite ColorMunki Display / DisplayCal 3.8.9.3  |
+| Monitor  | Calibration Hardware | Calibration Software |
+| ------------- | ------------- | ------------- |
+| LG 27UK650  | X-Rite ColorMunki Display  | DisplayCal 3.8.9.3  |
 
 Target Color
 
-| sRGB  | 248 218 69  |
-| LAB D50  | 87.73 -0.36 72.62  |
+| sRGB  | LAB D50  |
+| ------------- | ------------- |
+| 248 218 69  | 87.73 -0.36 72.62  |
 
 Experimental Results
 
