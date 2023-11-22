@@ -91,8 +91,6 @@ Results may differ depending on the Monitor, the Calibration and the displayed c
 
 ### Other colors
 
- Comparison from a calibrated monitor with a Mscms WPF Color-Managed application
-
 ![Screenshoot 1](docs/ColorChart.png)
 
 ## Demo Example - Calibrated Monitor
