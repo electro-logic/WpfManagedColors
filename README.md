@@ -83,7 +83,7 @@ How the target color looks under different conditions
 
 ![Screenshoot 1](docs/ColorComparison.png)
 
-Note: To properly see the comparison, the image should be viewed on a calibrated sRGB monitor and with a color-managed browser (ex. Google Chrome or Microsoft Edge).
+Note: To properly see the comparison, the image should be viewed on a calibrated sRGB monitor and with a color-managed application.
 
 Results may differ depending on the Monitor model and the Calibration, but the concept and order of magnitude remains valid.
 
