@@ -57,6 +57,8 @@ To verify the real-world accuracy of the Mscms Color Management a Target Color w
 
 ![Gamut Diagram](docs/LG27UK650_CIELAB_D65_sRGB_LabLUT.png)
 
+The native RGB color space of the Monitor is wider than sRGB, color-unmanaged applications will display overly saturated colors. This can be a serious problem for applications that requires accurate colors for decision making such as medical software, quality control, imaging applications, product stores, etc.. 
+
 ### Target Color
 
 | sRGB  | LAB D50  |
@@ -89,7 +91,7 @@ How the target color looks under different conditions
 
 Note: To properly see the comparison, the image should be viewed on a calibrated sRGB monitor and with a color-managed application.
 
-Results may differ depending on the Monitor model and the Calibration, but the concept and order of magnitude remains valid.
+Results may differ depending on the Monitor, the Calibration and the displayed color, but the concept and order of magnitude remains valid.
 
 ## Demo Example - Calibrated Monitor
 
