@@ -49,9 +49,13 @@ To verify the real-world accuracy of the Mscms Color Management a Target Color w
 
 Calibration
 
-| Monitor  | Calibration Hardware | Calibration Software |
+| Monitor  | Calibration Hardware | Calibration Software | Profile Type |
 | ------------- | ------------- | ------------- |
-| LG 27UK650  | X-Rite ColorMunki Display  | DisplayCal 3.8.9.3  |
+| LG 27UK650  | X-Rite ColorMunki Display  | DisplayCal 3.8.9.3  | L*a*b* LUT  |
+
+CIE a*b* Gamut Diagram (Perceptual Rendering Intent)
+
+![Gamut Diagram](docs/LG27UK650_CIELAB_D65_sRGB_LabLUT.png)
 
 Target Color
 
@@ -77,13 +81,13 @@ Results may differ depending on the Monitor model and the Calibration, but the c
 
 The Monitor is calibrated and the Color Profile is installed. In this example you can see that the Managed Yellow is slightly different to be more accurate on the used display. Colors are transformed from the Input Profile (sRGB) to the Output Profile (Monitor profile .icm)
 
-![alt text](docs/screen1.png)
+![Screenshoot 1](docs/screen1.png)
 
 ## Demo Example - Uncalibrated Monitor
 
 The Monitor is not calibrated and the Color Profile fallback to sRGB. Colors are not changed because Input and Output profiles are the same.
 
-![alt text](docs/screen2.png)
+![Screenshoot 2](docs/screen2.png)
 
 ## System Requirements
 
