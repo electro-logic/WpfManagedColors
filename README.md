@@ -43,6 +43,31 @@ A FullHD image (1920x1080) color correction usually takes less than 0.1s
 
 For high-performance scenario a commercial version of the Mscms.WPF library exists and offers a GPU-accelerated color management engine, making possible to color-manage the whole app with support for real-time animations, video playback, etc.. Please contact the author if interested.
 
+## Color Accuracy
+
+To verify the accuracy of the Mscms Color Management a Target Color was displayed and measured under different conditions.
+
+Calibration
+Monitor			LG 27UK650
+Calibration		X-Rite ColorMunki Display / DisplayCal 3.8.9.3
+
+Target Color
+sRGB			248 218 69
+LAB D50			87.73 -0.36 72.62
+
+Experimental Results
+
+Monitor			App Colors		sRGB			LAB D50				CIE00	CMC 1:1
+Uncalibrated	Unmanaged		245 224 6		88.82 -5.67 86.44	4.16	5.43
+Calibrated		Unmanaged		247 218 35		87.60 -1.51 82.00	2.19	3.18
+Calibrated		Managed			250 219 76		88.24 -0.02 70.52	0.63	0.80
+
+An uncalibrated monitor is showing a color difference of 4.16 using the CIE2000 comparison method. The color difference is easily spotted by untrained viewers.
+By calibrating the monitor some corrections are loaded in the GPU and a standard WPF app improves the accuracy to 2.19, but the difference is still evident.
+A color-managed WPF app with a calibrated monitor is showing an unperceptible color difference of 0.63, that trained viewers are not usually able to discern.
+
+Results may differ depending on the Monitor model and the Calibration, but the concept is the same.
+
 ## Demo Example - Calibrated Monitor
 
 The Monitor is calibrated and the Color Profile is installed. In this example you can see that the Managed Yellow is slightly different to be more accurate on the used display. Colors are transformed from the Input Profile (sRGB) to the Output Profile (Monitor profile .icm)
