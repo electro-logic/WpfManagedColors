@@ -45,7 +45,7 @@ For high-performance scenario a commercial version of the Mscms.WPF library exis
 
 ## Color Accuracy
 
-To verify the accuracy of the Mscms Color Management a Target Color was displayed and measured under different conditions.
+To verify the real-world accuracy of the Mscms Color Management a Target Color was displayed and measured under different conditions.
 
 Calibration
 
@@ -67,9 +67,9 @@ Experimental Results
 | Calibrated  | Unmanaged  | 247 218 35  | 87.60 -1.51 82.00  | 2.19  | 3.18  |
 | Calibrated  | Managed  | 250 219 76  | 88.24 -0.02 70.52  | 0.63  | 0.80  |
 
-An uncalibrated monitor is showing a color difference of 4.16 using the CIE2000 comparison method. The color difference is easily spotted by untrained viewers.
-By calibrating the monitor some corrections are loaded in the GPU and a standard WPF app improves the accuracy to 2.19, but the difference is still evident.
-A color-managed WPF app with a calibrated monitor is showing an unperceptible color difference of 0.63, that trained viewers are not usually able to discern.
+An uncalibrated monitor is showing a color difference of 4.16 using the CIE2000 comparison method. The difference is easily spotted by untrained viewers.
+By calibrating the monitor some corrections are loaded in the GPU the color accuracy improves to 2.19. The difference is still spottable.
+The color-managed WPF app with the calibrated monitor is showing an unperceptible color difference of 0.63. Trained viewers are usually not able to discern any difference.
 
 Results may differ depending on the Monitor model and the Calibration, but the concept is the same.
 
