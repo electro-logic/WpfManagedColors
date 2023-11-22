@@ -50,8 +50,8 @@ To verify the real-world accuracy of the Mscms Color Management a Target Color w
 Calibration
 
 | Monitor  | Calibration Hardware | Calibration Software | Profile Type |
-| ------------- | ------------- | ------------- |
-| LG 27UK650  | X-Rite ColorMunki Display  | DisplayCal 3.8.9.3  | L*a*b* LUT  |
+| ------------- | ------------- | ------------- | ------------- |
+| LG 27UK650  | X-Rite ColorMunki Display  | DisplayCal 3.8.9.3  | Lab LUT  |
 
 CIE a*b* Gamut Diagram (Perceptual Rendering Intent)
 
