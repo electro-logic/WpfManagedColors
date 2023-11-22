@@ -87,7 +87,7 @@ How the target color looks under different conditions
 
 Note: To properly see the comparison, the image should be viewed on a calibrated sRGB monitor and with a color-managed application.
 
-Results may differ depending on the Monitor model and the Calibration, but the concept and order of magnitude remains valid.
+Results may differ depending on the Monitor, the Calibration and the displayed color, but the concept and order of magnitude remains valid.
 
 ## Demo Example - Calibrated Monitor
 
