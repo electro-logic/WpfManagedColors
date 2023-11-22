@@ -47,13 +47,13 @@ For high-performance scenario a commercial version of the Mscms.WPF library exis
 
 To verify the real-world accuracy of the Mscms Color Management a Target Color was displayed and measured under different conditions.
 
-###Calibration
+### Calibration
 
 | Monitor  | Calibration Hardware | Calibration Software |
 | ------------- | ------------- | ------------- |
 | LG 27UK650  | X-Rite ColorMunki Display  | DisplayCal 3.8.9.3  |
 
-### CIE a*b* Gamut Diagram (Perceptual Rendering Intent)
+### CIE a\*b\* Gamut Diagram (Perceptual Rendering Intent)
 
 ![Gamut Diagram](docs/LG27UK650_CIELAB_D65_sRGB_LabLUT.png)
 
