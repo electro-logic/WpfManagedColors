@@ -77,7 +77,12 @@ By calibrating the monitor some corrections are loaded in the GPU the color accu
 
 The color-managed WPF app with the calibrated monitor is showing an unperceptible color difference of 0.63. Trained viewers are usually not able to discern any difference.
 
-Results may differ depending on the Monitor model and the Calibration, but the concept is the same.
+How the same color looks under different conditions
+![Screenshoot 1](docs/ColorComparison.png)
+
+Note: To properly see the comparison, the image should be viewed on a calibrated sRGB monitor.
+
+Results may differ depending on the Monitor model and the Calibration, but the concept and order of magnitude remains valid.
 
 ## Demo Example - Calibrated Monitor
 
