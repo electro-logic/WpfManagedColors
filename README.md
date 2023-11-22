@@ -48,19 +48,22 @@ For high-performance scenario a commercial version of the Mscms.WPF library exis
 To verify the accuracy of the Mscms Color Management a Target Color was displayed and measured under different conditions.
 
 Calibration
-Monitor			LG 27UK650
-Calibration		X-Rite ColorMunki Display / DisplayCal 3.8.9.3
+
+| Monitor  | LG 27UK650 |
+| Calibration  | X-Rite ColorMunki Display / DisplayCal 3.8.9.3  |
 
 Target Color
-sRGB			248 218 69
-LAB D50			87.73 -0.36 72.62
+
+| sRGB  | 248 218 69  |
+| LAB D50  | 87.73 -0.36 72.62  |
 
 Experimental Results
 
-Monitor			App Colors		sRGB			LAB D50				CIE00	CMC 1:1
-Uncalibrated	Unmanaged		245 224 6		88.82 -5.67 86.44	4.16	5.43
-Calibrated		Unmanaged		247 218 35		87.60 -1.51 82.00	2.19	3.18
-Calibrated		Managed			250 219 76		88.24 -0.02 70.52	0.63	0.80
+| Monitor  | App Colors | sRGB | LAB D50 | CIE00 | CMC 1:1 |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Uncalibrated  | Unmanaged  | 245 224 6  | 88.82 -5.67 86.44  | 4.16  | 5.43  |
+| Calibrated  | Unmanaged  | 247 218 35  | 87.60 -1.51 82.00  | 2.19  | 3.18  |
+| Calibrated  | Managed  | 250 219 76  | 88.24 -0.02 70.52  | 0.63  | 0.80  |
 
 An uncalibrated monitor is showing a color difference of 4.16 using the CIE2000 comparison method. The color difference is easily spotted by untrained viewers.
 By calibrating the monitor some corrections are loaded in the GPU and a standard WPF app improves the accuracy to 2.19, but the difference is still evident.
