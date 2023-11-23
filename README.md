@@ -2,6 +2,7 @@
 
 Color Managed WPF Demonstration app based on the nuget library [Mscms](https://www.nuget.org/packages/Mscms.WPF)
 
+<div style='text-align: justify;'>
 Colors displayed by WPF applications are not color managed, this library fills the gap by integrating the WCS (Windows Color System) introduced by Windows Vista.
 
 The first step for accurate colors is to calibrate the monitor with a calibration software (ex. DisplayCal) and device (manufacturer ex. Calibrite, Datacolor, etc..). A Color Profile for your monitor will be installed.
@@ -53,11 +54,13 @@ To verify the real-world accuracy of the Mscms Color Management a Target Color w
 | ------------- | ------------- | ------------- |
 | LG 27UK650  | X-Rite ColorMunki Display  | DisplayCal 3.8.9.3  |
 
-### CIE a\*b\* Gamut Diagram (Perceptual Rendering Intent)
+### Monitor a\*b\* Gamut Diagram
 
 ![Gamut Diagram](docs/LG27UK650_CIELAB_D65_sRGB_LabLUT.png)
 
-The native RGB color space of the Monitor is wider than sRGB, color-unmanaged applications will display overly saturated colors. This can be a serious problem for applications that requires accurate colors for decision making such as medical software, quality control, imaging applications, product stores, etc.. 
+The native RGB color space of the Monitor is wider than sRGB and color-unmanaged applications will display overly saturated colors. This can be a serious problem for applications that requires accurate colors for decision making such as medical software, quality control, imaging applications, product stores, etc.. 
+
+Note: The above 2D diagram, calculated with the Perceptual Rendering Intent, can give only an idea of what colors the monitor is able to reproduce in the LAB color space that is 3D.
 
 ### Target Color
 
@@ -67,7 +70,7 @@ The native RGB color space of the Monitor is wider than sRGB, color-unmanaged ap
 
 ### Experimental Results
 
-| Monitor  | App Colors | sRGB | LAB D50 | CIE00 | CMC 1:1 |
+| Monitor  | App Colors | Measured sRGB | Measured LAB D50 | CIE00 | CMC 1:1 |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | Uncalibrated  | Unmanaged  | 245 224 6  | 88.82 -5.67 86.44  | 4.16  | 5.43  |
 | Calibrated  | Unmanaged  | 247 218 35  | 87.60 -1.51 82.00  | 2.19  | 3.18  |
@@ -85,13 +88,15 @@ How the target color looks under different conditions
 
 ![Screenshoot 1](docs/ColorComparison.png)
 
-Note: To properly see the comparison, the image should be viewed on a calibrated sRGB monitor and with a color-managed application.
+Note: To properly see the comparison, the image should be viewed on a calibrated sRGB monitor, in standard environment conditions and with a color-managed application. Some browsers (ex. Firefox) are not color-managing non-tagged images by default.
 
 Results may differ depending on the Monitor, the Calibration and the displayed color, but the concept and order of magnitude remains valid.
 
 ### Other colors
 
 ![Screenshoot 1](docs/ColorChart.png)
+
+By calibrating the monitor and using a color-managed app, the average CIE2000 color difference of tested colors is within 0.8
 
 ## Demo Example - Calibrated Monitor
 
@@ -114,3 +119,4 @@ WPF projects (including .NET 6+) should reference Mscms.WPF, while non-WPF proje
 ## Commercial License
 
 The library [Mscms](https://www.nuget.org/packages/Mscms.WPF) is not free to use for commercial projects. Please contact (info at majinsoft .com) to obtain a commercial license, support and additional features such as GPU acceleration.
+</div>
