@@ -11,7 +11,14 @@ namespace WpfManagedColors
     public partial class MainWindow : Window
     {
         public MainWindow() => InitializeComponent();
-        void Window_Loaded(object sender, RoutedEventArgs e) => Demo();
+        void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (ColorHelper.IsNightLightEnabled())
+            {
+                MessageBox.Show("Detected Windows Night Light.\nPlease turn it off for accurate colors.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            Demo();
+        }
         void Demo()
         {
             //BasicExample();

@@ -2,7 +2,6 @@
 
 Color Managed WPF Demonstration app based on the nuget library [Mscms](https://www.nuget.org/packages/Mscms.WPF)
 
-<div style='text-align: justify;'>
 Colors displayed by WPF applications are not color managed, this library fills the gap by integrating the WCS (Windows Color System) introduced by Windows Vista.
 
 The first step for accurate colors is to calibrate the monitor with a calibration software (ex. DisplayCal) and device (manufacturer ex. Calibrite, Datacolor, etc..). A Color Profile for your monitor will be installed.
@@ -119,4 +118,3 @@ WPF projects (including .NET 6+) should reference Mscms.WPF, while non-WPF proje
 ## Commercial License
 
 The library [Mscms](https://www.nuget.org/packages/Mscms.WPF) is not free to use for commercial projects. Please contact (info at majinsoft .com) to obtain a commercial license, support and additional features such as GPU acceleration.
-</div>
